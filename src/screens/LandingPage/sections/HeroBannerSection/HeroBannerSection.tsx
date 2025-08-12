@@ -80,6 +80,7 @@ export const HeroBannerSection = (): JSX.Element => {
                 border border-white/20 hover:border-white/40"
               >
                 {/* Button shine effect */}
+                {/* it is shine effect of button ...... */}
                 <div
                   className="absolute inset-0 rounded-[12px] bg-gradient-to-r from-transparent via-white/20 to-transparent 
                   translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-out"
@@ -91,7 +92,7 @@ export const HeroBannerSection = (): JSX.Element => {
                   <svg
                     className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
                     fill="none"
-                    stroke="currentColor"
+                    // stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
                     <path
