@@ -1,0 +1,1 @@
+export { NewsInsightsSection } from "./NewsInsightsSection";

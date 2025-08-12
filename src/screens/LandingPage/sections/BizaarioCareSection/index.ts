@@ -1,0 +1,1 @@
+export { BizaarioCareSection } from "./BizaarioCareSection";
