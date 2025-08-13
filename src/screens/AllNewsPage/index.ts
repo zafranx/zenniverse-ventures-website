@@ -1,1 +1,1 @@
-    export { AllNewsPage } from "./AllNewsPage";
+export { AllNewsPage } from "./AllNewsPage";
