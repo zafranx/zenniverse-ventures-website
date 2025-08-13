@@ -2,6 +2,7 @@
 import React from "react";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
+import { Link } from "react-router-dom";
 
 export const ContactUsSection = (): JSX.Element => {
   // Data for contact cards to enable mapping
@@ -83,11 +84,13 @@ export const ContactUsSection = (): JSX.Element => {
 
           {/* CTA Button - Mobile-optimized */}
           <div className="w-full sm:w-auto">
-            <Button className="w-full sm:w-auto px-6 md:px-8 py-3 md:py-4 bg-[#4b8cbb] rounded-[8px] hover:bg-[#225f8c] focus:bg-[#225f8c] transition-colors duration-200 shadow-md hover:shadow-lg">
-              <span className="font-bold text-sm md:text-base lg:text-lg font-['Poppins',Helvetica] text-white">
-                Let's Work Together
-              </span>
-            </Button>
+            <Link to="/contact">
+              <Button className="w-full sm:w-auto px-6 md:px-8 py-3 md:py-4 bg-[#4b8cbb] rounded-[8px] hover:bg-[#225f8c] focus:bg-[#225f8c] transition-colors duration-200 shadow-md hover:shadow-lg">
+                <span className="font-bold text-sm md:text-base lg:text-lg font-['Poppins',Helvetica] text-white">
+                  Let's Work Together
+                </span>
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

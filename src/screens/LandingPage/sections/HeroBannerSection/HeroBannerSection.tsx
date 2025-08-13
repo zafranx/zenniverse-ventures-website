@@ -1,11 +1,15 @@
 import React from "react";
 import { Button } from "../../../../components/ui/button";
+import { Link } from "react-router-dom";
 
 export const HeroBannerSection = (): JSX.Element => {
   return (
-    <section className="relative w-full pt-16 md:pt-20 lg:pt-24 pb-8 md:pb-12 lg:pb-16 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-[120px]">
+    <section className="relative w-full pt-16 md:pt-20 lg:pt-24 pb-8 md:pb-12 lg:pb-16 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-[120px] mt-[15px]">
       {/* Hero Banner Container */}
-      <div className="relative w-full max-w-[1200px] mx-auto h-[450px] sm:h-[500px] md:h-[550px] lg:h-[579px] rounded-[20px] md:rounded-[30px] lg:rounded-[36px] overflow-hidden shadow-2xl">
+
+      {/* max-w-[1200px]  old width */}
+
+      <div className="relative w-full max-w-[1400px] mx-auto h-[450px] sm:h-[500px] md:h-[550px] lg:h-[579px] rounded-[20px] md:rounded-[30px] lg:rounded-[36px] overflow-hidden shadow-2xl">
         {/* Background Image with Parallax Effect */}
         <div className="absolute inset-0 w-full h-full">
           <div
@@ -70,40 +74,42 @@ export const HeroBannerSection = (): JSX.Element => {
 
             {/* Enhanced CTA Button */}
             <div className="opacity-0 animate-slide-up animation-delay-900">
-              <Button
-                className="group relative bg-gradient-to-r from-[#4b8cbb] to-[#225f8c] hover:from-[#225f8c] hover:to-[#1a4a6b] 
+              <Link to="/contact">
+                <Button
+                  className="group relative bg-gradient-to-r from-[#4b8cbb] to-[#225f8c] hover:from-[#225f8c] hover:to-[#1a4a6b] 
                 rounded-[12px] px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-4 
                 font-['Poppins',Helvetica] font-bold text-sm sm:text-base md:text-lg 
                 text-white shadow-lg hover:shadow-2xl 
                 transition-all duration-500 ease-out
                 transform hover:scale-105 hover:-translate-y-1
                 border border-white/20 hover:border-white/40"
-              >
-                {/* Button shine effect */}
-                {/* it is shine effect of button ...... */}
-                <div
-                  className="absolute inset-0 rounded-[12px] bg-gradient-to-r from-transparent via-white/20 to-transparent 
+                >
+                  {/* Button shine effect */}
+                  {/* it is shine effect of button ...... */}
+                  <div
+                    className="absolute inset-0 rounded-[12px] bg-gradient-to-r from-transparent via-white/20 to-transparent 
                   translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-out"
-                />
+                  />
 
-                {/* Button text */}
-                <span className="relative z-10 flex items-center gap-2">
-                  Let's Connect
-                  <svg
-                    className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
-                    fill="none"
-                    // stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17 8l4 4m0 0l-4 4m4-4H3"
-                    />
-                  </svg>
-                </span>
-              </Button>
+                  {/* Button text */}
+                  <span className="relative z-10 flex items-center gap-2">
+                    Let's Connect
+                    <svg
+                      className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
+                      fill="none"
+                      // stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </span>
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
