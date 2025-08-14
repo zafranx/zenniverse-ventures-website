@@ -8,12 +8,14 @@ export const FooterSection = (): JSX.Element => {
     { title: "Service", href: "/services" },
     { title: "Contact Us", href: "/contact" },
   ];
-
   // Quick Links
   const quickLinks = [
-    { title: "Privacy Policy", href: "/privacy" },
-    { title: "Terms Of Use", href: "/terms" },
-    { title: "Term & Conditions", href: "/terms-conditions" },
+    { title: "News & Insights", href: "/news" },
+    { title: "Pathbreaking Initiatives", href: "/initiatives" },
+    // { title: "Privacy Policy", href: "/privacy" },
+    // { title: "Term & Conditions", href: "/terms-conditions" },
+    { title: "Privacy Policy", href: "/" },
+    { title: "Term & Conditions", href: "/" },
   ];
 
   // Social media icons data with proper SVG icons
@@ -199,7 +201,7 @@ export const FooterSection = (): JSX.Element => {
 
         <div className="relative flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-[445px]">
           <p className="font-['Poppins',Helvetica] font-semibold text-[#D9D9D9] text-xs sm:text-sm md:text-sm lg:text-[14px] leading-tight sm:leading-[21px] text-center drop-shadow-sm">
-            ©2025 zeniverse-ventures All Rights Reserved
+            ©2025 Zeniverse Ventures All Rights Reserved
           </p>
         </div>
       </div>

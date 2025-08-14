@@ -1,4 +1,4 @@
-import { NewsArticle, NewsSection } from "../types/newsTypes";
+import { NewsArticle } from "../types/newsTypes";
 
 //* // data/newsData.ts
 // export const newsArticles: NewsArticle[] = [

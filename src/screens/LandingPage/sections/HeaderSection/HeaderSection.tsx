@@ -21,25 +21,15 @@ export const HeaderSection = (): JSX.Element => {
       path: "/",
       active: location.pathname === "/",
     },
-    // {
-    //   label: "About",
-    //   path: "/about",
-    //   active: location.pathname === "/about",
-    // },
-    // {
-    //   label: "Services",
-    //   path: "/services",
-    //   active: location.pathname === "/services",
-    // },
     {
       label: "About",
-      path: "/",
-      // active: location.pathname === "/about",
+      path: "/about",
+      active: location.pathname === "/about",
     },
     {
       label: "Services",
-      path: "/",
-      // active: location.pathname === "/services",
+      path: "/services",
+      active: location.pathname === "/services",
     },
     {
       label: "Contact",
@@ -82,7 +72,7 @@ export const HeaderSection = (): JSX.Element => {
         <div className="flex items-center gap-4 md:gap-8 lg:gap-16 xl:gap-[120px]">
           {/* Logo with navigation */}
           <img
-            className="w-auto h-12 cursor-pointer md:h-16 lg:h-20 transition-transform duration-200 hover:scale-105"
+            className="w-auto h-12 transition-transform duration-200 cursor-pointer md:h-16 lg:h-20 hover:scale-105"
             alt="Zeniverse Ventures Logo"
             src="/image-2-1.png"
             onClick={handleLogoClick}

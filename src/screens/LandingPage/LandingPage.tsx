@@ -9,7 +9,7 @@ import { NewsInsightsSection } from "./sections/NewsInsightsSection";
 import { OurFocusSection } from "./sections/OurFocusSection";
 import { OurTeamSection } from "./sections/OurTeamSection";
 import { PortfolioSection } from "./sections/PortfolioSection";
-import { SamarthKidsSection } from "./sections/SamarthKidsSection";
+import { InitiativeSection } from "./sections/InitiativeSection";
 import { VisionToRealitySection } from "./sections/VisionToRealitySection";
 
 export const LandingPage = (): JSX.Element => {
@@ -27,7 +27,7 @@ export const LandingPage = (): JSX.Element => {
         <NewsInsightsSection />
         <BizaarioCareSection />
         <ContactUsSection />
-        <SamarthKidsSection />
+        <InitiativeSection />
         <FooterSection />
       </main>
     </div>
